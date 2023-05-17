@@ -1,0 +1,102 @@
+.about {
+  background-color: #fb8e0b;
+  padding-top: 5.25em;
+  padding-bottom: 6.43em;
+  @media screen and (max-width: 992px) {
+    padding-top: 3.56em;
+    padding-bottom: 4.56em;
+  }
+  @media screen and (max-width: 578px) {
+    padding-top: 1.56em;
+    padding-bottom: 2.56em;
+  }
+  &__title {
+    color: #ffffff;
+    text-align: center;
+    max-width: 446px;
+    width: 100%;
+    margin: 0 auto 1.56em;
+    @media screen and (max-width: 578px) {
+      margin: 0 autoqqq 0.8em;
+    }
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 600px));
+    justify-content: space-between;
+    gap: 30px;
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(1, minmax(0, 800px));
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  &__content {
+    text-align: center;
+  }
+  &__inner {
+    padding: 1.87em 3.125em;
+    background-color: #ffffff;
+    border-radius: 11.1111px;
+    position: relative;
+    margin-bottom: 2.875em;
+    @media screen and (max-width: 578px) {
+      padding: 1em 2.5em;
+    }
+  }
+  &__desc {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fd6003;
+    margin-bottom: 0.75em;
+  }
+  &__text {
+    font-size: 1.125rem;
+    color: #383a47;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+  &__triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 13.5px solid transparent;
+    border-right: 13.5px solid transparent;
+    border-bottom: 27px solid #ffffff;
+    transform: translateX(-50%) rotate(180deg);
+    left: 50%;
+    top: 100%;
+  }
+  &__ceo {
+  }
+}
+
+.ceo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  &__img {
+    max-width: 62px;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  &__picture {
+    width: 100%;
+    height: 100%;
+  }
+  &__content {
+    text-align: start;
+  }
+  &__name {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0.7em;
+  }
+  &__text {
+    font-size: 0.875rem;
+    color: #ffffff;
+    mix-blend-mode: normal;
+  }
+}

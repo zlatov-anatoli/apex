@@ -1,0 +1,58 @@
+.conversations {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 6.875em;
+  padding-bottom: 4.56em;
+  @media screen and (max-width: 1200px) {
+    padding-top: 4.56em;
+    gap: 20px;
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 578px) {
+    padding-top: 2.56em;
+    padding-bottom: 2.56em;
+  }
+  &__inner {
+    margin-right: 6%;
+    @media screen and (max-width: 992px) {
+      order: 2;
+      max-width: 530px;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 0.48em;
+    @media screen and (max-width: 1200px) {
+    }
+  }
+  &__text {
+    margin-bottom: 2.5em;
+    color: #383a47;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1.5em;
+    }
+  }
+  &__btn {
+    padding: 1em 1.25em 1.31em;
+    border-radius: 10px;
+  }
+  &__img {
+    flex-shrink: 0;
+    max-width: 592px;
+    width: 100%;
+    aspect-ratio: 1/0.77;
+  }
+  @media screen and (max-width: 992px) {
+    order: 1;
+  }
+  &__picture {
+    width: 100%;
+    height: 100%;
+  }
+}

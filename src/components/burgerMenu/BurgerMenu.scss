@@ -1,0 +1,47 @@
+.burger-menu {
+  transform: translateX(120%);
+  width: 45vw;
+  height: 100vh;
+  background-color: orange;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 5vh 15px;
+  border-radius: 30px 0 0 30px;
+  transition: transform 0.5s ease;
+  z-index: 10;
+  &.active {
+    transform: translateX(0);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    & .menu__link {
+      font-size: 1.2rem;
+      color: white;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__login {
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #1b1c20;
+    background-color: transparent;
+    font-size: 1.3rem;
+    align-self: flex-start;
+  }
+  &__btn {
+    align-self: center;
+  }
+}
